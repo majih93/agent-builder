@@ -51,7 +51,7 @@ class BedrockClient:
                 f"AWS Bedrock 클라이언트 초기화 실패. AWS 인증/설정을 확인하세요: {e}"
             )
 
-    def invoke_model(self, query: str, system_prompt: str) -> str:
+    def invoke_model(self, query: str, system_prompt: str = "") -> str:
         """
         주어진 프롬프트 사용하여 Bedrock 모델 호출 후 텍스트 응답 반환
         """
